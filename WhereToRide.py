@@ -1,6 +1,6 @@
 #  AUTHOR:  Michael O'Brien
 #  CREATED:  19 June 2018
-#  UPDATED:  20 June 2018
+#  UPDATED:  21 June 2018
 #  DESCRIPTION:  Simple Website
 
 
@@ -24,6 +24,12 @@ def about():
 
 def stores():
     return render_template('bike_shops.html')
+
+
+@app.route('/clubs')
+
+def clubs():
+    return render_template('clubs.html')
 
 
 @app.route('/map/')
